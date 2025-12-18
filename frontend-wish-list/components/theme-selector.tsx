@@ -65,7 +65,7 @@ export default function ThemeSelector({ currentTheme, onThemeChange, spiritPerce
                 borderColor: isSelected ? "#2d5016" : "#d4af37",
                 backgroundColor: isUnlocked ? "#fff9f0" : "#f0f0f0",
                 color: isUnlocked ? "#3d2817" : "#999",
-                ringColor: "#2d5016",
+              
               }}
             >
               <div className="text-3xl mb-2">{theme.icon}</div>

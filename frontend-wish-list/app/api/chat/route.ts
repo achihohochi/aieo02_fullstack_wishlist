@@ -13,7 +13,8 @@ export async function POST(request: NextRequest) {
     }
 
     // Forward request to the backend FastAPI server
-    const backendUrl = process.env.BACKEND_URL || "http://localhost:8002"
+    // const backendUrl = process.env.BACKEND_URL || "http://localhost:8002"
+    const backendUrl = process.env.BACKEND_URL || "https://backend-wish-list-smoky.vercel.app"
 
     const response = await fetch(`${backendUrl}/api/chat`, {
       method: "POST",

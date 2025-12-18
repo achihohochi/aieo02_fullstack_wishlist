@@ -19,7 +19,6 @@ logger.info("Backend application started")
 # CORS so the frontend can talk to backend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
     allow_origins=["https://frontend-wish-list-seven.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
